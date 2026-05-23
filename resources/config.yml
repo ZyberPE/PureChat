@@ -33,19 +33,31 @@ enable-multiworld-chat: false
 
 groups:
   Guest:
-    chat: '&7&l[GUEST]&r&c [§7{fac_name}§c]§f {display_name}'
-    nametag: '§l§7GUEST§r§c [§7{fac_name}§c] §f{display_name}§7:§7 {msg}'
+    chat: 'Guest {display_name}'
+    nametag: 'display_name} {msg}'
     worlds: []
+  Trainee:
+    chat: 'Trainee {display_name}'
+    nametag: 'display_name} {msg}'
+  Mod:
+    chat: 'Mod {display_name}'
+    nametag: 'display_name} {msg}'
   Admin:
-    chat: '&l&aADMIN&r&c [§7{fac_name}§c]§f {display_name}§a»§f {msg}'
-    nametag: '&7&l[&aADMIN&7]&r&c [§7{fac_name}§c]§f {display_name}'
-    worlds: []
+    chat: 'Admin {display_name}'
+    nametag: 'display_name} {msg}'
+  CoOwner:
+    chat: 'CoOwner {display_name}'
+    nametag: 'display_name} {msg}'
   Owner:
-    chat: '&l&4OWNER&r&c [&7{fac_name}&c]&f {display_name}&4»&f {msg}'
-    nametag: '&l&7[&4OWNER&7]&r&c [§7{fac_name}§c]§f {display_name}'
-    worlds: []
-  ACM:
-    chat: '&l&bACM&r&c [&7{fac_name}&c]&f {display_name}&b»&e {msg}'
-    nametag: '&l&7[&bACM&7]&r&c [§7{fac_name}§c]§f {display_name}'
-    worlds: []
+    chat: 'Owner {display_name}'
+    nametag: 'display_name} {msg}'
+  Chihuahua:
+    chat: 'Chihuahua {display_name}'
+    nametag: 'display_name} {msg}'
+  Beagle:
+    chat: 'Beagle {display_name}'
+    nametag: 'display_name} {msg}'
+  PitBull:
+    chat: 'PitBull {display_name}'
+    nametag: 'display_name} {msg}'
 ...
