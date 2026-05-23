@@ -34,30 +34,30 @@ enable-multiworld-chat: false
 groups:
   Guest:
     chat: 'Guest {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'Guest {msg}'
     worlds: []
   Trainee:
     chat: 'Trainee {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'Trainee {msg}'
   Mod:
     chat: 'Mod {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'Mod} {msg}'
   Admin:
     chat: 'Admin {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'Admin {msg}'
   CoOwner:
     chat: 'CoOwner {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'CoOwner {msg}'
   Owner:
     chat: 'Owner {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'Owner {msg}'
   Chihuahua:
     chat: 'Chihuahua {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'Chihuahua {msg}'
   Beagle:
     chat: 'Beagle {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'Beagle {msg}'
   PitBull:
     chat: 'PitBull {display_name}'
-    nametag: 'display_name} {msg}'
+    nametag: 'PitBull {msg}'
 ...
