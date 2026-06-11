@@ -6,6 +6,7 @@ use _64FF00\PureChat\factions\BedrockClans;
 use _64FF00\PureChat\factions\FactionMaster;
 use _64FF00\PureChat\factions\FactionsInterface;
 use _64FF00\PureChat\factions\PiggyFactions;
+use _64FF00\PureChat\factions\zFactions;
 use _64FF00\PureChat\factions\SimpleFaction;
 use _64FF00\PurePerms\PPGroup;
 use _64FF00\PurePerms\PurePerms;
