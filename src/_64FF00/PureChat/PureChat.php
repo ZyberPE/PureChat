@@ -50,14 +50,9 @@ class PureChat extends PluginBase
  |  __/  | |_| | | |    |  __/ | |___  | | | | | (_| | | |_ 
  |_|      \__,_| |_|     \___|  \____| |_| |_|  \__,_|  \__|
         by fernanACM and _64FF00 - https://github.com/fernanACM
-case "zfactions":
-    if($this->getServer()->getPluginManager()->getPlugin("zFactions") !== null){
-        $this->factionsAPI = new zFactions();
-        $this->getLogger()->notice("zFactions support enabled.");
-        break;
-    }
-    $this->getLogger()->notice("zFactions was not found.");
-break;
+                                                             ");
+        $this->loadFactionsPlugin();
+        $this->getServer()->getPluginManager()->registerEvents(new PCListener($this), $this);
 
     /**
      * @return void
