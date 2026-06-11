@@ -6,10 +6,10 @@
 config-version: "3.0.0-ACM"
 # You can enable or disable this option for faction support
 # use "false" or "true"
-faction-support: false
 # Set default factions plugin for PureChat by fernanACM
 # - [PiggyFactions, SimpleFaction, FactionMaster, BedrockClans]
-default-factions-plugin: PiggyFactions
+faction-support: true
+default-factions-plugin: zFactions
 
 # Enable this if you want to use per-world chat formats / per-world nametags for players
 # - true / false
