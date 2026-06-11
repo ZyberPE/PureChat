@@ -19,7 +19,7 @@ use pocketmine\utils\TextFormat;
 
 class PureChat extends PluginBase
 {
-    const MAIN_PREFIX = "§l§f[§aACM§f] »§r§7 ";
+    const MAIN_PREFIX = "";
 
     private Config $config;
     private ?FactionsInterface $factionsAPI;
