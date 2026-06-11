@@ -17,18 +17,14 @@ class zFactions implements FactionsInterface{
 
         $faction = $plugin->getFactionManager()->getPlayerFaction($player);
 
-        return $faction !== null ? $faction->getName() : "";
-    }
-
-    public function getPlayerRank(Player $player) : string{
-        $plugin = $player->getServer()->getPluginManager()->getPlugin("zFactions");
-
-        if($plugin === null){
+        if($faction === null){
             return "";
         }
 
-        $rank = $plugin->getFactionManager()->getPlayerRank($player);
+        return $faction->getName();
+    }
 
-        return $rank !== null ? $rank->getName() . " " : "";
+    public function getPlayerRank(Player $player) : string{
+        return "";
     }
 }
