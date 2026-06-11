@@ -293,17 +293,27 @@ class PureChat extends PluginBase
                     $this->getLogger()->notice("FactionMaster was not found. Disabling factions plugin support.");
                 break;
 
-                case "bedrockclans":
-                    if($this->getServer()->getPluginManager()->getPlugin("BedrockClans") !== null){
-                        $this->factionsAPI = new BedrockClans();
-                        $this->getLogger()->notice("BedrockClans support enabled.");
-                        break;
-                    }
-                    $this->getLogger()->notice("BedrockClans was not found. Disabling factions plugin support.");
-                break;
-                default:
-                    $this->getLogger()->notice("No valid factions plugin in default-factions-plugin node was found. Disabling factions plugin support.");
-                    break;
+case "bedrockclans":
+    if($this->getServer()->getPluginManager()->getPlugin("BedrockClans") !== null){
+        $this->factionsAPI = new BedrockClans();
+        $this->getLogger()->notice("BedrockClans support enabled.");
+        break;
+    }
+    $this->getLogger()->notice("BedrockClans was not found. Disabling factions plugin support.");
+break;
+
+case "zfactions":
+    if($this->getServer()->getPluginManager()->getPlugin("zFactions") !== null){
+        $this->factionsAPI = new zFactions();
+        $this->getLogger()->notice("zFactions support enabled.");
+        break;
+    }
+    $this->getLogger()->notice("zFactions was not found. Disabling factions plugin support.");
+break;
+
+default:
+    $this->getLogger()->notice("No valid factions plugin in default-factions-plugin node was found. Disabling factions plugin support.");
+    break;
             }
         }
     }
